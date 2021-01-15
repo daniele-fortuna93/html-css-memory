@@ -10,9 +10,36 @@ body {
 }
 
 header {
-  width: 90%;
+  width: 80%;
   text-align: center;
   font-size: 45px;
   padding: 20px;
   color: white;
+  margin: auto;
+}
+
+h1 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.row {
+  width: 60%;
+  margin: auto;
+}
+
+.box-card {
+  background-image: url('../img/pattern.png');
+  background-size: contain;
+  width: 180px;
+  height: 210px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.size-img, .text-img {
+  width: 160px;
+  display: none;
 }
