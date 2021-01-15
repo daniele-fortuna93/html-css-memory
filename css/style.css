@@ -8,7 +8,7 @@ body {
   background-color: #ADD8E6;
   font-family: 'Nerko One', cursive;
 }
-
+/* intestazione */
 header {
   width: 80%;
   text-align: center;
@@ -22,44 +22,51 @@ h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+/* /intestazione */
 
 .row {
-  width: 60%;
+  width: 80%;
   margin: auto;
   text-align: center;
+  margin-bottom: 30px;
 }
-
+/* box carte */
 .pattern {
   background-image: url('../img/pattern.png');
   background-size: contain;
-  width: 200px;
-  height: 240px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
   display: inline-block;
-  margin-right: 20px;
 }
 
 .box-card {
   display: none;
   background-color: white;
-  width: 200px;
-  height: 240px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.text {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 10px;
+
+.pattern, .box-card {
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
 }
 
+.text {
+  color: orange;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+}
 
+.scoperta .text {
+  color: purple;
+}
+  /* /box carte */
 
-.pattern:hover .box-card.ballon{
+/* inizio background diversi */
+.box-card.baloon.scoperta {
   display: inline-block;
   background-image: url('../img/noun_air_balloon_3134741.png');
   background-size: contain;
@@ -67,6 +74,13 @@ h1 {
   background-position: center;
 }
 
+.pattern:hover .box-card.baloon{
+  display: inline-block;
+  background-image: url('../img/noun_air_balloon_3134741.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .pattern:hover .box-card.bicycle{
   display: inline-block;
   background-image: url('../img/noun_Bicycle_3134821.png');
@@ -74,7 +88,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .pattern:hover .box-card.ship{
   display: inline-block;
   background-image: url('../img/noun_Cruise_Ship_3134824.png');
@@ -82,11 +95,33 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .pattern:hover .box-card.submarine{
   display: inline-block;
   background-image: url('../img/noun_Submarine_3134738.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.pattern:hover .box-card.tractor{
+  display: inline-block;
+  background-image: url('../img/noun_Tractor_3134797.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pattern:hover .box-card.tram{
+  display: inline-block;
+  background-image: url('../img/noun_Tram_3134750.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* /fine background diversi */
+
+footer {
+  text-align: center;
+  font-size: 25px;
+  width: 80%;
+  margin: 20px auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
 }
