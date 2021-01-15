@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ADD8E6;
+  font-family: 'Nerko One', cursive;
+}
+
+header {
+  width: 90%;
+  text-align: center;
+  font-size: 45px;
+  padding: 20px;
+  color: white;
+}
